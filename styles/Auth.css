@@ -1,0 +1,149 @@
+/* Sayfanın genel stil ayarları */
+.auth-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #37AFE1, #f7efec); /* Hafif pembe degrade */
+  padding: 20px; /* Küçük ekranlarda taşmayı önlemek için */
+}
+
+/* Form Kartı */
+.auth-card {
+  width: 100%;
+  max-width: 400px; /* Büyük ekranlar için maksimum genişlik */
+  padding: 30px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+/* Başlık Stili */
+.auth-title {
+  font-size: clamp(20px, 2vw, 24px); /* Dinamik font boyutu */
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* Input Kutuları */
+.auth-input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  background: white; /* Siyah yerine beyaz arka plan */
+  color: #333; /* Yazı rengi koyu gri */
+  transition: 0.3s ease-in-out;
+}
+
+.auth-input:focus {
+  border-color: #ff5e62;
+  outline: none;
+  background: #fffaf0; /* Hafif açık renk odaklanma efekti */
+}
+
+/* Butonlar */
+.auth-button {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* Giriş Butonu */
+.auth-button.login {
+  background: #007bff;
+  color: white;
+}
+
+.auth-button.login:hover {
+  background: #0056b3;
+}
+
+/* Kayıt Ol Butonu */
+.auth-button.signup {
+  background: #007bff;
+  color: rgb(247, 246, 246);
+}
+
+.auth-button.signup:hover {
+  background: #16186c;
+}
+
+/* Alt Metin */
+.auth-footer {
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+.auth-footer a {
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* 🌟 Başarı Mesajı (Pop-up) */
+.success-popup {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #28a745;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  animation: fadeInOut 3s ease-in-out;
+}
+
+/* ✅ Yeşil Tik */
+.checkmark {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* 🔹 *Responsive Tasarım İçin Media Queries* 🔹 */
+
+/* 📱 *Mobil Cihazlar (max-width: 480px)* */
+@media (max-width: 480px) {
+  .auth-card {
+    max-width: 320px; /* Mobilde daha dar */
+    padding: 20px;
+  }
+
+  .auth-title {
+    font-size: 18px; /* Küçük ekranlarda daha küçük başlık */
+  }
+
+  .auth-input {
+    font-size: 14px; /* Input yazısı küçülsün */
+    padding: 10px;
+  }
+
+  .auth-button {
+    font-size: 16px;
+    padding: 10px;
+  }
+}
+
+/* 💻 *Tablet ve Küçük Laptoplar (481px - 1024px)* */
+@media (max-width: 1024px) {
+  .auth-card {
+    max-width: 350px; /* Tabletlerde biraz büyük olabilir */
+  }
+}
+
+/* 🖥 *Geniş Ekranlar (1440px ve üstü)* */
+@media (min-width: 1440px) {
+  .auth-card {
+    max-width: 450px; /* Büyük ekranlarda biraz daha geniş */
+  }
+}

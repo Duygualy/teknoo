@@ -1,0 +1,12 @@
+.dashboard-container {
+    display: grid;
+    background: #37AFE1;
+    background-size: cover;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 1px 20px 20px 100px;
+  }
+  

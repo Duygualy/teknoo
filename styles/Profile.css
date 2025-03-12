@@ -1,0 +1,115 @@
+/* Profil Sayfası Genel Stili */
+.profile-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  padding: 20px;
+  background: linear-gradient(135deg, #37AFE1, #ece8f0);
+}
+
+/* Profil Resmi Wrapper */
+.profile-pic-wrapper {
+  position: relative;
+  width: 120px; /* Medium Boyut */
+  height: 120px;
+  margin-bottom: 20px;
+}
+
+/* Dashboard'da Küçük, Profile Sayfasında Büyük Profil Fotoğrafı */
+.profile-pic {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid white;
+}
+
+/* Sadece Profile Sayfasında Büyük Görünsün */
+.profile-pic-large {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid white;
+}
+
+/* Kullanıcı Bilgileri */
+.user-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  max-width: 350px;
+}
+
+.user-info input,
+.user-info textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  text-align: center;
+  background: #f0f0f0;
+}
+
+/* Buton Grubu */
+.button-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  max-width: 200px;
+  margin-top: 15px;
+}
+
+/* Düzenleme Butonu */
+.edit-button {
+  padding: 10px 15px;
+  border: none;
+  background-color: #0D9276;
+  color: white;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+}
+
+.edit-button:hover {
+  background-color: #0D9276;
+}
+
+/* Çıkış Yap Butonu */
+.logout-button {
+  padding: 10px 15px;
+  border: none;
+  background-color: #11af66;
+  color: white;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+}
+
+.logout-button:hover {
+  background-color: #08522f;
+}
+
+/* Hesabı Sil Butonu */
+.delete-account {
+  padding: 10px 15px;
+  border: none;
+  background-color: red;
+  color: white;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+}
+
+.delete-account:hover {
+  background-color: darkred;
+}
